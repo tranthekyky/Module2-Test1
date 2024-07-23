@@ -124,8 +124,8 @@ public class Main {
                     System.out.println(clazz.maxAvgScore()); ;
                     break;
                 case 8 :
-                    System.out.println("Tổng điểm trung bình của lớp là : ");
-                    clazz.sumScore() ;
+                    System.out.printf("Tổng điểm trung bình của lớp là : %.1f\n", clazz.sumScore());
+
                     break;
                 default:
                     System.out.println("Vui lòng nhập lại số yêu cầu");

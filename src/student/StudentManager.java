@@ -53,7 +53,7 @@ public class StudentManager {
         for (int i = 0; i < size; i++) {
             sum += listStudents[i].getAverageStudent() ;
         }
-        return sum / size;
+        return sum / size ;
     }
     public String maxAvgScore() {
         double max = 0;
@@ -64,7 +64,8 @@ public class StudentManager {
                 index = i;
             }
         }
-        return "Học sinh : " + listStudents[index].getName() + " Tổng điểm : " + max;
+        String roundNumber = String.format("%.2f", max);
+        return "Học sinh : " + listStudents[index].getName() + " - Tổng điểm : " + roundNumber ;
     }
     public Student searchID (int id) {
         return listStudents[id - 1];
